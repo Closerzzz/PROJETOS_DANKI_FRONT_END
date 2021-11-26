@@ -1,0 +1,163 @@
+.nav-link{
+    margin: 0 15px;
+}
+.box-fixed{
+    position: relative;
+    top: 70px;
+}
+.navbar{
+    background-color: white;
+}
+section.bg-top{
+    width: 100%;
+    min-height: 600px;
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+.fix-zindex{
+    position: relative;
+    z-index: 2;
+}
+.overlay{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(100,100,100,0.4);
+}
+.texto-bg{
+    display: inline-block;
+    color: white;
+    padding:140px 0;
+}
+.padding30{
+    padding-right: 60px;
+}
+
+section.chamada{
+    background-color: #159df7;
+    padding: 8px 0;
+    color: white;
+}
+section.chamada h2{
+    font-size: 34px;
+}
+section.sobre{padding: 30px 0;}
+.custom-title{
+    position: relative;
+}
+.custom-title h2{
+    color: #707070;
+    font-size: 25px;
+}
+section.sobre .custom-title > div{
+    position: absolute;
+    top: 17px;
+    left: 75px;
+    width: 400px;
+    height: 4px;
+    background-color: #707070;
+}
+section.diferencias{
+    padding: 50px 0;
+    color: #646464;
+}
+section.diferencias .col-md-4{
+    padding: 0 40px;
+}
+section.diferencias h2{
+    padding: 10px 0;
+    border-bottom: 1px dotted black;
+}
+section.diferencias .custom-title > div{
+    position: absolute;
+    top: 25px;
+    left: 82px;
+    width: 390px;
+    height: 4px;
+    background-color: #707070;
+}
+
+section.convite{
+    padding: 15px 0;
+    background-color: #3FA3C5;
+}
+section.convite h2{
+    font-size: 28px;
+    color: white;
+    margin: 15px 0;
+}
+section.convite form{
+    margin: 15px 0;
+} 
+section.convite input[type=email]{
+    width: calc(100% - 100px);
+    height: 40px;
+    padding-left: 8px;
+}
+section.convite button{
+    margin-left: 220px;
+    margin-top: 5px;
+    width: 100px;
+    height: 40px;
+}
+section.contato{
+    padding:30px 0;
+    background-color: #ccc;
+}
+section.contato .form-group{
+    margin: 10px 0;
+}
+footer{
+    background-color: #333;
+    color: white;
+}
+footer ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    list-style-position: inside;
+}
+footer a{
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+.groups-btn a{
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    section.diferencias .custom-title > div{
+        display: none;
+    }
+    section.sobre .custom-title > div{
+        display: none;
+    }
+    section.diferencias h2{
+        text-align: center;
+    }
+    .custom-title h2{
+        text-align: center;
+    }
+    section.convite button{
+        margin: 0 auto;
+    }
+}
