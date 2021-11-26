@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.center{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+section.main{
+    position: relative;
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 15px 0;
+    min-height: 800px;
+}
+
+section.main header{
+    position: relative;
+    z-index: 2;
+    padding-bottom: 10px;
+    border-bottom:1px solid white;
+}
+
+.icons-social{
+    float: right;
+}
+
+.icons-social a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.logo{
+    margin-top: 20px;
+    float: left;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+
+nav.desktop{
+    margin-top: 20px;
+    float: right;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop li{
+    margin: 0 15px;
+    display: inline-block;
+    font-size: 17px;
+    color: white;
+    font-weight: lighter;
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none ;
+}
+
+.conteudo-header{
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 110px 0;
+}
+
+.conteudo-header h2{
+    color: white;
+    font-weight: lighter;
+    font-size: 44px;
+}
+
+.conteudo-header h2 > span{
+    color: #2692FF;
+}
+
+.conteudo-header p{
+    color: white;
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.conteudo-header a{
+    display: block;
+    width: 177px;
+    height: 44px;
+    background-color:#2692FF;
+    color: white;
+    border-radius: 20px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 18px;
+}
+
+.chamada-plano{
+    width: 100%;
+    text-align: center;
+    padding: 27px 2%;
+    background-color: rgb(220,220,220);
+}
+
+.chamada-plano h2{
+    text-transform: uppercase;
+    display: inline-block;
+    border-top: 2px solid black;
+    color: #2692FF;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.box-planos{
+    padding: 40px 0;
+}
+
+.box-planos > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-planos-single{
+    width: 33.3%;
+    padding: 0 40px;
+}
+
+.box-planos-wraper{
+    width: 100%;
+    border: 1px solid #ccc;
+    min-height: 300px;
+    -webkit-box-shadow: 5px 11px 5px -2px #000000; 
+    box-shadow: 5px 11px 5px -2px #000000;
+}
+
+.box-planos-single h2{
+    background-color: #2692FF;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-weight: lighter;
+}
+
+.pontos-plano{
+    padding: 8px 0 15px 0px;
+}
+
+.preco{
+    margin-top: 10px;
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+}
+
+.preco h2{
+    padding: 0 20px;
+    background-color: transparent;
+    color: #777777;
+    font-size: 24px;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+}
+
+.box-planos-single p{
+    margin-left: 20px;
+    color: #777777;
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+section.paralax{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    padding: 40px 0;
+    background-image: url(../images/bg_parallax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+section.paralax h2{
+    text-align: center;
+}
+
+section.paralax p{
+    margin-top: 15px;
+}
+
+section.paralax >.center{
+    position: relative;
+    z-index: 2;
+    max-width: 960px;
+    color: white;
+}
+
+section.final-section{
+    padding: 30px 0;
+}
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    margin: 30px 0;
+}
+
+section.final-section h2{
+    position: relative;
+    font-weight: lighter;
+    color: #777777;
+    font-size: 24px;
+}
+
+section.final-section h2 >.border-efeito{
+    width: 50px;
+    height: 2px;
+    background-color: #777777;
+    position: absolute;
+    transition: 0.4s;
+}
+section.final-section h2:hover >.border-efeito{
+    width: 100px;
+}
+.contato form{
+    margin-top: 15px;
+}
+.contato input:not([type=submit]){
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    border:1px solid #ccc;
+    padding-left: 8px;
+    margin-top: 10px;
+    display: block;
+}
+.contato textarea{
+    font-size: 15px;
+    padding-left: 8px;
+    margin-top: 10px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+.contato input[type=submit]{
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #2692FF;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    width: 200px;
+    height: 44px;
+    margin-top: 15px;
+}
+.box-avatar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    vertical-align: middle;
+}
+.topo-box-usuario{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.equipe-single{
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    min-height: 150px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 5px 11px 5px -2px #000000; 
+    box-shadow: 5px 11px 5px -2px #000000;
+}
+.info-usuario{
+    display: inline-block;
+    color: #777777;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+.time > .w50{
+    width: 48%;
+    margin:10px 1%;
+}
+.descricao-usuario-box{
+    color: #505050;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.overlay-paralax{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(20,20,20,0.6);
+}
+nav.menu-mobile{
+    display: none;
+    float: right;
+}
+nav.menu-mobile ul{
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 91px;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    background-color: #ccc;
+}
+.menu-mobile li{
+    padding: 8px 0;
+    border-bottom: 1px  solid #444;
+}
+.menu-mobile a{
+    text-decoration: none;
+    color: #444;
+    text-align: center;
+    font-weight: lighter;
+    display: block;
+}
+nav.menu-mobile > i{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    right: 15px;
+}
+footer{
+    width: 100%;
+    padding: 10px 2%;
+    text-align: center;
+    color: white;
+    background-color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    .box-planos-single{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .w50{
+        width: 100%;
+    }
+    .time >.w50{
+        width: 100%;
+        margin: 15px;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+    nav.desktop{
+        display: none;
+    }
+}
